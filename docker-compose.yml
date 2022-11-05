@@ -2,7 +2,9 @@ version: "3.0"
 services:
   nebula:
     privileged: true
-    build: .
-    container_name: Nebula
     network_mode: host
+    container_name: Nebula
+    build: .
+    volumes:
+      - /credentials:./credentials
     restart: unless-stopped
