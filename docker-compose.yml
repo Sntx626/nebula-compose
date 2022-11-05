@@ -1,7 +1,7 @@
 version: "3.0"
 services:
   nebula:
-    #privileged: true
+    privileged: true
     build: .
     container_name: Nebula
     network_mode: host
