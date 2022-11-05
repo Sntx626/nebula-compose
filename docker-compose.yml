@@ -6,5 +6,5 @@ services:
     container_name: Nebula
     build: .
     volumes:
-      - /credentials:./credentials
+      - ./credentials:/credentials
     restart: unless-stopped
