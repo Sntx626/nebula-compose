@@ -6,4 +6,4 @@ WORKDIR /nebula
 COPY ./nebula .
 COPY ./config.yml .
 
-CMD ["nebula", "-config", "config.yml"]
+CMD ["./nebula", "-config", "config.yml"]
